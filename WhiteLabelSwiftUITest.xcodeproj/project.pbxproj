@@ -1,0 +1,510 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CF270C8226318546000406B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF270C8126318546000406B1 /* AppDelegate.swift */; };
+		CF270C8426318546000406B1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF270C8326318546000406B1 /* SceneDelegate.swift */; };
+		CF270C8626318546000406B1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF270C8526318546000406B1 /* ContentView.swift */; };
+		CF270C8826318549000406B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF270C8726318549000406B1 /* Assets.xcassets */; };
+		CF270C8B2631854A000406B1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF270C8A2631854A000406B1 /* Preview Assets.xcassets */; };
+		CF270C8E2631854A000406B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF270C8C2631854A000406B1 /* LaunchScreen.storyboard */; };
+		CF270C972631878E000406B1 /* ClientA.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF270C962631878E000406B1 /* ClientA.xcassets */; };
+		CF270C9D2631883D000406B1 /* ClientB.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF270C9C2631883D000406B1 /* ClientB.xcassets */; };
+		CF270CB72631AA52000406B1 /* digi-cert-ha-root-ca.cer in Resources */ = {isa = PBXBuildFile; fileRef = CF270CB32631A7C6000406B1 /* digi-cert-ha-root-ca.cer */; };
+		CF270CB82631AA52000406B1 /* DigiCertSHA2ExtendedValidationServerCA.cer in Resources */ = {isa = PBXBuildFile; fileRef = CF270CB22631A7C6000406B1 /* DigiCertSHA2ExtendedValidationServerCA.cer */; };
+		CF270CBA2631AA54000406B1 /* DigiCertTLSRSASHA2562020CA1.cer in Resources */ = {isa = PBXBuildFile; fileRef = CF270CB42631A7C6000406B1 /* DigiCertTLSRSASHA2562020CA1.cer */; };
+		CF270CBC2631AA56000406B1 /* digi-cert-global-root-ca.cer in Resources */ = {isa = PBXBuildFile; fileRef = CF270CB12631A7C6000406B1 /* digi-cert-global-root-ca.cer */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CF270C7E26318546000406B1 /* WhiteLabelSwiftUITest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhiteLabelSwiftUITest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF270C8126318546000406B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CF270C8326318546000406B1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CF270C8526318546000406B1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CF270C8726318549000406B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CF270C8A2631854A000406B1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CF270C8D2631854A000406B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CF270C8F2631854A000406B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF270C962631878E000406B1 /* ClientA.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ClientA.xcassets; sourceTree = "<group>"; };
+		CF270C9C2631883D000406B1 /* ClientB.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ClientB.xcassets; sourceTree = "<group>"; };
+		CF270C9F263188E3000406B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF270CB12631A7C6000406B1 /* digi-cert-global-root-ca.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = "digi-cert-global-root-ca.cer"; sourceTree = "<group>"; };
+		CF270CB22631A7C6000406B1 /* DigiCertSHA2ExtendedValidationServerCA.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = DigiCertSHA2ExtendedValidationServerCA.cer; sourceTree = "<group>"; };
+		CF270CB32631A7C6000406B1 /* digi-cert-ha-root-ca.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = "digi-cert-ha-root-ca.cer"; sourceTree = "<group>"; };
+		CF270CB42631A7C6000406B1 /* DigiCertTLSRSASHA2562020CA1.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = DigiCertTLSRSASHA2562020CA1.cer; sourceTree = "<group>"; };
+		CF270CC02631ACBF000406B1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF270C7B26318546000406B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CF270C7526318546000406B1 = {
+			isa = PBXGroup;
+			children = (
+				CF270CC02631ACBF000406B1 /* README.md */,
+				CF270C8026318546000406B1 /* WhiteLabelSwiftUITest */,
+				CF270C7F26318546000406B1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CF270C7F26318546000406B1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF270C7E26318546000406B1 /* WhiteLabelSwiftUITest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF270C8026318546000406B1 /* WhiteLabelSwiftUITest */ = {
+			isa = PBXGroup;
+			children = (
+				CF270CB32631A7C6000406B1 /* digi-cert-ha-root-ca.cer */,
+				CF270CB22631A7C6000406B1 /* DigiCertSHA2ExtendedValidationServerCA.cer */,
+				CF270CA12631894F000406B1 /* Clients */,
+				CF270C8126318546000406B1 /* AppDelegate.swift */,
+				CF270C8326318546000406B1 /* SceneDelegate.swift */,
+				CF270C8526318546000406B1 /* ContentView.swift */,
+				CF270C8726318549000406B1 /* Assets.xcassets */,
+				CF270C8C2631854A000406B1 /* LaunchScreen.storyboard */,
+				CF270C892631854A000406B1 /* Preview Content */,
+			);
+			path = WhiteLabelSwiftUITest;
+			sourceTree = "<group>";
+		};
+		CF270C892631854A000406B1 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CF270C8A2631854A000406B1 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CF270C9A2631880E000406B1 /* ClientA */ = {
+			isa = PBXGroup;
+			children = (
+				CF270CB12631A7C6000406B1 /* digi-cert-global-root-ca.cer */,
+				CF270C8F2631854A000406B1 /* Info.plist */,
+				CF270C962631878E000406B1 /* ClientA.xcassets */,
+			);
+			path = ClientA;
+			sourceTree = "<group>";
+		};
+		CF270C9B26318829000406B1 /* ClientB */ = {
+			isa = PBXGroup;
+			children = (
+				CF270CB42631A7C6000406B1 /* DigiCertTLSRSASHA2562020CA1.cer */,
+				CF270C9F263188E3000406B1 /* Info.plist */,
+				CF270C9C2631883D000406B1 /* ClientB.xcassets */,
+			);
+			path = ClientB;
+			sourceTree = "<group>";
+		};
+		CF270CA12631894F000406B1 /* Clients */ = {
+			isa = PBXGroup;
+			children = (
+				CF270C9B26318829000406B1 /* ClientB */,
+				CF270C9A2631880E000406B1 /* ClientA */,
+			);
+			path = Clients;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CF270C7D26318546000406B1 /* WhiteLabelSwiftUITest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF270C922631854A000406B1 /* Build configuration list for PBXNativeTarget "WhiteLabelSwiftUITest" */;
+			buildPhases = (
+				CF270C7A26318546000406B1 /* Sources */,
+				CF270C7B26318546000406B1 /* Frameworks */,
+				CF270C7C26318546000406B1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WhiteLabelSwiftUITest;
+			productName = WhiteLabelSwiftUITest;
+			productReference = CF270C7E26318546000406B1 /* WhiteLabelSwiftUITest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF270C7626318546000406B1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					CF270C7D26318546000406B1 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = CF270C7926318546000406B1 /* Build configuration list for PBXProject "WhiteLabelSwiftUITest" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF270C7526318546000406B1;
+			productRefGroup = CF270C7F26318546000406B1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF270C7D26318546000406B1 /* WhiteLabelSwiftUITest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF270C7C26318546000406B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF270CB72631AA52000406B1 /* digi-cert-ha-root-ca.cer in Resources */,
+				CF270C8E2631854A000406B1 /* LaunchScreen.storyboard in Resources */,
+				CF270CB82631AA52000406B1 /* DigiCertSHA2ExtendedValidationServerCA.cer in Resources */,
+				CF270C8B2631854A000406B1 /* Preview Assets.xcassets in Resources */,
+				CF270C9D2631883D000406B1 /* ClientB.xcassets in Resources */,
+				CF270CBA2631AA54000406B1 /* DigiCertTLSRSASHA2562020CA1.cer in Resources */,
+				CF270C972631878E000406B1 /* ClientA.xcassets in Resources */,
+				CF270C8826318549000406B1 /* Assets.xcassets in Resources */,
+				CF270CBC2631AA56000406B1 /* digi-cert-global-root-ca.cer in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF270C7A26318546000406B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF270C8226318546000406B1 /* AppDelegate.swift in Sources */,
+				CF270C8426318546000406B1 /* SceneDelegate.swift in Sources */,
+				CF270C8626318546000406B1 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CF270C8C2631854A000406B1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF270C8D2631854A000406B1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CF270C902631854A000406B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CLIENT = ClientA;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				EXCLUDED_SOURCE_FILE_NAMES = (
+					"*/Clients/ClientA/*",
+					"$(inherited)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INCLUDED_SOURCE_FILE_NAMES = "*/Clients/$(CLIENT)/*";
+				INFOPLIST_FILE = "WhiteLabelSwiftUITest/Clients/$(CLIENT)/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CF270C912631854A000406B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CLIENT = ClientA;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXCLUDED_SOURCE_FILE_NAMES = (
+					"*/Clients/ClientA/*",
+					"$(inherited)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INCLUDED_SOURCE_FILE_NAMES = "*/Clients/$(CLIENT)/*";
+				INFOPLIST_FILE = "WhiteLabelSwiftUITest/Clients/$(CLIENT)/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CF270C932631854A000406B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "$(CLIENT)-AppIcon";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"WhiteLabelSwiftUITest/Preview Content\"";
+				DEVELOPMENT_TEAM = 5J9C5Y3BH3;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "$(inherited)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ch.ti8m.security.WhileLabelTest.WhiteLabelSwiftUITest.clientA;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CF270C942631854A000406B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "$(CLIENT)-AppIcon";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"WhiteLabelSwiftUITest/Preview Content\"";
+				DEVELOPMENT_TEAM = 5J9C5Y3BH3;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "$(inherited)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ch.ti8m.security.WhileLabelTest.WhiteLabelSwiftUITest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CF270CA926318AFB000406B1 /* Debug-B */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CLIENT = ClientB;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				EXCLUDED_SOURCE_FILE_NAMES = (
+					"*/Clients/ClientA/*",
+					"$(inherited)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INCLUDED_SOURCE_FILE_NAMES = "*/Clients/$(CLIENT)/*";
+				INFOPLIST_FILE = "WhiteLabelSwiftUITest/Clients/$(CLIENT)/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = "Debug-B";
+		};
+		CF270CAA26318AFB000406B1 /* Debug-B */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "$(CLIENT)-AppIcon";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"WhiteLabelSwiftUITest/Preview Content\"";
+				DEVELOPMENT_TEAM = 5J9C5Y3BH3;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "$(inherited)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ch.ti8m.security.WhileLabelTest.WhiteLabelSwiftUITest.clientB;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Debug-B";
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF270C7926318546000406B1 /* Build configuration list for PBXProject "WhiteLabelSwiftUITest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF270C902631854A000406B1 /* Debug */,
+				CF270CA926318AFB000406B1 /* Debug-B */,
+				CF270C912631854A000406B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF270C922631854A000406B1 /* Build configuration list for PBXNativeTarget "WhiteLabelSwiftUITest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF270C932631854A000406B1 /* Debug */,
+				CF270CAA26318AFB000406B1 /* Debug-B */,
+				CF270C942631854A000406B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CF270C7626318546000406B1 /* Project object */;
+}
