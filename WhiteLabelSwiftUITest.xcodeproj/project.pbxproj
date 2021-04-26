@@ -19,6 +19,9 @@
 		CF270CB82631AA52000406B1 /* DigiCertSHA2ExtendedValidationServerCA.cer in Resources */ = {isa = PBXBuildFile; fileRef = CF270CB22631A7C6000406B1 /* DigiCertSHA2ExtendedValidationServerCA.cer */; };
 		CF270CBA2631AA54000406B1 /* DigiCertTLSRSASHA2562020CA1.cer in Resources */ = {isa = PBXBuildFile; fileRef = CF270CB42631A7C6000406B1 /* DigiCertTLSRSASHA2562020CA1.cer */; };
 		CF270CBC2631AA56000406B1 /* digi-cert-global-root-ca.cer in Resources */ = {isa = PBXBuildFile; fileRef = CF270CB12631A7C6000406B1 /* digi-cert-global-root-ca.cer */; };
+		CF270CC92631B74F000406B1 /* Whitelabelable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF270CC82631B74F000406B1 /* Whitelabelable.swift */; };
+		CF270CCC2631B792000406B1 /* ClientB.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF270CCB2631B792000406B1 /* ClientB.swift */; };
+		CF270CD02631B7E0000406B1 /* ClientA.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF270CCF2631B7E0000406B1 /* ClientA.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +41,10 @@
 		CF270CB32631A7C6000406B1 /* digi-cert-ha-root-ca.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = "digi-cert-ha-root-ca.cer"; sourceTree = "<group>"; };
 		CF270CB42631A7C6000406B1 /* DigiCertTLSRSASHA2562020CA1.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = DigiCertTLSRSASHA2562020CA1.cer; sourceTree = "<group>"; };
 		CF270CC02631ACBF000406B1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		CF270CC12631AEDC000406B1 /* BaseWhiteLabelConfiguration.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = BaseWhiteLabelConfiguration.xcconfig; sourceTree = "<group>"; };
+		CF270CC82631B74F000406B1 /* Whitelabelable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Whitelabelable.swift; sourceTree = "<group>"; };
+		CF270CCB2631B792000406B1 /* ClientB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientB.swift; sourceTree = "<group>"; };
+		CF270CCF2631B7E0000406B1 /* ClientA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientA.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +87,8 @@
 				CF270C8726318549000406B1 /* Assets.xcassets */,
 				CF270C8C2631854A000406B1 /* LaunchScreen.storyboard */,
 				CF270C892631854A000406B1 /* Preview Content */,
+				CF270CC12631AEDC000406B1 /* BaseWhiteLabelConfiguration.xcconfig */,
+				CF270CC82631B74F000406B1 /* Whitelabelable.swift */,
 			);
 			path = WhiteLabelSwiftUITest;
 			sourceTree = "<group>";
@@ -95,6 +104,7 @@
 		CF270C9A2631880E000406B1 /* ClientA */ = {
 			isa = PBXGroup;
 			children = (
+				CF270CCF2631B7E0000406B1 /* ClientA.swift */,
 				CF270CB12631A7C6000406B1 /* digi-cert-global-root-ca.cer */,
 				CF270C8F2631854A000406B1 /* Info.plist */,
 				CF270C962631878E000406B1 /* ClientA.xcassets */,
@@ -108,6 +118,7 @@
 				CF270CB42631A7C6000406B1 /* DigiCertTLSRSASHA2562020CA1.cer */,
 				CF270C9F263188E3000406B1 /* Info.plist */,
 				CF270C9C2631883D000406B1 /* ClientB.xcassets */,
+				CF270CCB2631B792000406B1 /* ClientB.swift */,
 			);
 			path = ClientB;
 			sourceTree = "<group>";
@@ -115,8 +126,8 @@
 		CF270CA12631894F000406B1 /* Clients */ = {
 			isa = PBXGroup;
 			children = (
-				CF270C9B26318829000406B1 /* ClientB */,
 				CF270C9A2631880E000406B1 /* ClientA */,
+				CF270C9B26318829000406B1 /* ClientB */,
 			);
 			path = Clients;
 			sourceTree = "<group>";
@@ -197,9 +208,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF270CC92631B74F000406B1 /* Whitelabelable.swift in Sources */,
 				CF270C8226318546000406B1 /* AppDelegate.swift in Sources */,
 				CF270C8426318546000406B1 /* SceneDelegate.swift in Sources */,
 				CF270C8626318546000406B1 /* ContentView.swift in Sources */,
+				CF270CCC2631B792000406B1 /* ClientB.swift in Sources */,
+				CF270CD02631B7E0000406B1 /* ClientA.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,6 +233,7 @@
 /* Begin XCBuildConfiguration section */
 		CF270C902631854A000406B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF270CC12631AEDC000406B1 /* BaseWhiteLabelConfiguration.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -255,10 +270,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				EXCLUDED_SOURCE_FILE_NAMES = (
-					"*/Clients/ClientA/*",
-					"$(inherited)",
-				);
+				EXCLUDED_SOURCE_FILE_NAMES = "$(inherited)";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -273,7 +285,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INCLUDED_SOURCE_FILE_NAMES = "*/Clients/$(CLIENT)/*";
+				INCLUDED_SOURCE_FILE_NAMES = "$(inherited)";
 				INFOPLIST_FILE = "WhiteLabelSwiftUITest/Clients/$(CLIENT)/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
@@ -281,13 +293,14 @@
 				ONLY_ACTIVE_ARCH = YES;
 				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = YES;
 				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		CF270C912631854A000406B1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF270CC12631AEDC000406B1 /* BaseWhiteLabelConfiguration.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -324,10 +337,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				EXCLUDED_SOURCE_FILE_NAMES = (
-					"*/Clients/ClientA/*",
-					"$(inherited)",
-				);
+				EXCLUDED_SOURCE_FILE_NAMES = "$(inherited)";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -336,13 +346,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INCLUDED_SOURCE_FILE_NAMES = "*/Clients/$(CLIENT)/*";
+				INCLUDED_SOURCE_FILE_NAMES = "$(inherited)";
 				INFOPLIST_FILE = "WhiteLabelSwiftUITest/Clients/$(CLIENT)/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = YES;
 				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
@@ -393,6 +404,7 @@
 		};
 		CF270CA926318AFB000406B1 /* Debug-B */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF270CC12631AEDC000406B1 /* BaseWhiteLabelConfiguration.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -429,10 +441,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				EXCLUDED_SOURCE_FILE_NAMES = (
-					"*/Clients/ClientA/*",
-					"$(inherited)",
-				);
+				EXCLUDED_SOURCE_FILE_NAMES = "$(inherited)";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -447,7 +456,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INCLUDED_SOURCE_FILE_NAMES = "*/Clients/$(CLIENT)/*";
+				INCLUDED_SOURCE_FILE_NAMES = "$(inherited)";
 				INFOPLIST_FILE = "WhiteLabelSwiftUITest/Clients/$(CLIENT)/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
@@ -455,7 +464,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = YES;
 				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = "Debug-B";

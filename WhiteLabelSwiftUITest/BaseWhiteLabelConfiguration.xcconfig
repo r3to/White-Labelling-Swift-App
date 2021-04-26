@@ -1,0 +1,17 @@
+//
+//  BaseWhiteLabelConfiguration.xcconfig
+//  WhiteLabelSwiftUITest
+//
+//  Created by Lehnherr Reto on 22.04.21.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+CLIENT_PATHS = */ClientA/* */ClientB*/
+
+EXCLUDED_SOURCE_FILE_NAMES = $CLIENT_PATHS
+INCLUDED_SOURCE_FILE_NAMES = */$(CLIENT)/*
+
+// NOTE: EXCLUDED_SOURCE_FILE_NAMES won't work to exclude .swfit files when building
+SWIFT_ACTIVE_COMPILATION_CONDITIONS = $(CLIENT)

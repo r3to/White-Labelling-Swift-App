@@ -11,18 +11,16 @@ struct ContentView: View {
     var bundleName: String {
         Bundle.main.bundleIdentifier!
     }
+    
+    static var client: Whitelabelable {
+        Client()
+    }
     var body: some View {
         ZStack {
-            
-//                .resizable()
-//                .edgesIgnoringSafeArea(.all)
-////                .frame(maxWidth: .infinity,
-////                       maxHeight: .infinity)
-//                .scaledToFill()
-            Text(bundleName)
+            Text(ContentView.client.name)
                 .padding()
                 .background(Color.black.opacity(0.5))
-                .foregroundColor(.white)
+                .foregroundColor(Color(ContentView.client.tintColor))
         }.frame(
             maxWidth: .infinity,
             maxHeight: .infinity)
