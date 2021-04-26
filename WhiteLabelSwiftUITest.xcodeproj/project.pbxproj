@@ -237,7 +237,6 @@
 /* Begin XCBuildConfiguration section */
 		CF270C902631854A000406B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CF270CC12631AEDC000406B1 /* BaseWhiteLabelConfiguration.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -304,7 +303,6 @@
 		};
 		CF270C912631854A000406B1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CF270CC12631AEDC000406B1 /* BaseWhiteLabelConfiguration.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -412,7 +410,6 @@
 		};
 		CF270CA926318AFB000406B1 /* Debug-B */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CF270CC12631AEDC000406B1 /* BaseWhiteLabelConfiguration.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
