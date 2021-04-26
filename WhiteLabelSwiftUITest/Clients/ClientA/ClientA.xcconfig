@@ -1,0 +1,14 @@
+//
+//  ClientA.xcconfig
+//  WhiteLabelSwiftUITest
+//
+//  Created by Lehnherr Reto on 26.04.21.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+#include "../../BaseWhiteLabelConfiguration.xcconfig"
+
+PRODUCT_BUNDLE_IDENTIFIER = ch.ti8m.security.WhileLabelTest.WhiteLabelSwiftUITest.clientA
+
+CLIENT = ClientA

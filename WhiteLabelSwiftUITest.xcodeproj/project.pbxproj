@@ -45,6 +45,8 @@
 		CF270CC82631B74F000406B1 /* Whitelabelable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Whitelabelable.swift; sourceTree = "<group>"; };
 		CF270CCB2631B792000406B1 /* ClientB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientB.swift; sourceTree = "<group>"; };
 		CF270CCF2631B7E0000406B1 /* ClientA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientA.swift; sourceTree = "<group>"; };
+		CF7111372636B8C1000D07D4 /* ClientA.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ClientA.xcconfig; sourceTree = "<group>"; };
+		CF7111462636BC35000D07D4 /* ClientB.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ClientB.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				CF270CB12631A7C6000406B1 /* digi-cert-global-root-ca.cer */,
 				CF270C8F2631854A000406B1 /* Info.plist */,
 				CF270C962631878E000406B1 /* ClientA.xcassets */,
+				CF7111372636B8C1000D07D4 /* ClientA.xcconfig */,
 			);
 			path = ClientA;
 			sourceTree = "<group>";
@@ -115,6 +118,7 @@
 		CF270C9B26318829000406B1 /* ClientB */ = {
 			isa = PBXGroup;
 			children = (
+				CF7111462636BC35000D07D4 /* ClientB.xcconfig */,
 				CF270CB42631A7C6000406B1 /* DigiCertTLSRSASHA2562020CA1.cer */,
 				CF270C9F263188E3000406B1 /* Info.plist */,
 				CF270C9C2631883D000406B1 /* ClientB.xcassets */,
@@ -265,7 +269,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CLIENT = ClientA;
+				CLIENT = "";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -332,7 +336,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CLIENT = ClientA;
+				CLIENT = "";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -362,9 +366,11 @@
 		};
 		CF270C932631854A000406B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF7111372636B8C1000D07D4 /* ClientA.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "$(CLIENT)-AppIcon";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLIENT = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"WhiteLabelSwiftUITest/Preview Content\"";
 				DEVELOPMENT_TEAM = 5J9C5Y3BH3;
@@ -374,7 +380,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ch.ti8m.security.WhileLabelTest.WhiteLabelSwiftUITest.clientA;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -383,9 +389,11 @@
 		};
 		CF270C942631854A000406B1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF7111372636B8C1000D07D4 /* ClientA.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "$(CLIENT)-AppIcon";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLIENT = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"WhiteLabelSwiftUITest/Preview Content\"";
 				DEVELOPMENT_TEAM = 5J9C5Y3BH3;
@@ -395,7 +403,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ch.ti8m.security.WhileLabelTest.WhiteLabelSwiftUITest;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -436,7 +444,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CLIENT = ClientB;
+				CLIENT = "";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -471,9 +479,11 @@
 		};
 		CF270CAA26318AFB000406B1 /* Debug-B */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF7111462636BC35000D07D4 /* ClientB.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "$(CLIENT)-AppIcon";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLIENT = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"WhiteLabelSwiftUITest/Preview Content\"";
 				DEVELOPMENT_TEAM = 5J9C5Y3BH3;
@@ -483,7 +493,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ch.ti8m.security.WhileLabelTest.WhiteLabelSwiftUITest.clientB;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
