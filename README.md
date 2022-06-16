@@ -1,10 +1,10 @@
 #  README
 
-This is an Example for the base setup of a white labeling app which uses Build configuration and Schemes instead of targets to differentiate between different Customers.
+This is an example for the setup of a white labeling app which uses build configurations and schemes instead of targets to differentiate between different implementation.
 
 ## tl;dr
 
-We separate customer specific Assets and Configurations in different directories and use Build configurations to include only those files, that are needed per implemenation.
+We separate customer specific assets and configurations in different directories and use build configurations to include only those files, that are needed per implemenation.
 
 ## Reading Resources
 
@@ -46,20 +46,21 @@ struct Client: Whitelabelable {
 #endif
 ```
 
-## Adding A New customer
+## Adding A New Customer
 
 1. Creating subdirectory
 2. Adding directory to `$(CLIENT_PATHS)` in [`BaseWhiteLabelConfiguration.xcconfig`](./BaseWhiteLabelConfiguration.xcconfig)
-3. Creating new Build configurations (Debug and Release)
+3. Creating new build configurations (Debug and Release)
     - Duplicate existing configurations
     - Set `$(CLIENT)` to the correct name 
     - -> TODO: have a base implementation, that can be copy-pasted
-4. Create a Build Scheme for the new customer
+4. Create a build scheme for the new customer
 5. Adjust configuration to match the customers specification
 
 
 ## Considerations
 
-- Multiple targets become messy
-- Separate Icons, certificates and configuration per App
+- Multiple targets can become messy
+- Separate icons, certificates and configuration per App
 - Simple is better than complicated
+- Possible alternative: use Swift packages for different components and configurations
